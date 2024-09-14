@@ -5,22 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>todo list</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-  <div class="container">
+  <h1 data-aos="fade-down" data-aos-duration="2000" class="judul">Todo List</h1>
+  <div data-aos="flip-down" data-aos-duration="2000" class="container">
    <div class="containerTodo">
-    <h1>Buat catatan harian kamu</h1>
-    <div class="input">
-      <input type="text" id="input" placeholder="masukkan catatan"> <br>
-      <input type="time"> <br>
-      <button id="add">tambah</button>
+    <h1 data-aos="fade-down" data-aos-duration="2000">Buat catatan harian kamu</h1>
+    <div class="inputUser">
+        <input data-aos="fade-right" data-aos-duration="2000" id="namaUser" type="text" id="input" placeholder="masukkan catatan"> <br>
+        <input  data-aos="fade-left" data-aos-duration="2000" id="timeUser" type="time"> <br>
+        <button   data-aos="fade-up" data-aos-duration="2000" id="btnAdd">tambah</button>
     </div>
    </div>
   
-  <div class="hasil">
+  <div data-aos="fade-up" data-aos-duration="2000" class="hasil">
+    <!-- hasil nya -->
+     <ul id="list">
 
+     </ul>
   </div>
   </div>
+  <script>
+    AOS.init({
+      once: false,
+    });
+  </script>
   <script src="app.js"></script>
 </body>
 </html>
