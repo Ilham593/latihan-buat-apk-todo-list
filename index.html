@@ -10,22 +10,29 @@
 </head>
 <body>
   <h1 data-aos="fade-down" data-aos-duration="2000" class="judul">Todo List</h1>
-  <div data-aos="flip-down" data-aos-duration="2000" class="container">
+  <div data-aos="flip-down" data-aos-duration="2000" class="container" >
    <div class="containerTodo">
     <h1 data-aos="fade-down" data-aos-duration="2000">Buat catatan harian kamu</h1>
     <div class="inputUser">
         <input data-aos="fade-right" data-aos-duration="2000" id="namaUser" type="text" id="input" placeholder="masukkan catatan"> <br>
-        <input  data-aos="fade-left" data-aos-duration="2000" id="timeUser" type="time"> <br>
+        <input  data-aos="fade-left" data-aos-duration="2000" id="timeUser" type="date"> <br>
         <button   data-aos="fade-up" data-aos-duration="2000" id="btnAdd">tambah</button>
     </div>
    </div>
   
   <div data-aos="fade-up" data-aos-duration="2000" class="hasil">
     <!-- hasil nya -->
-     <ul id="list">
+     <ul class="list" id="list">
 
      </ul>
   </div>
+  </div>
+
+  <div class="warning">
+    <div id="warning">
+      <p>semua yang kamu inputkan hanya tersimpan di local storage -- browser kamu</p>
+      <button id="oke">oke</button>
+    </div>
   </div>
   <script>
     AOS.init({

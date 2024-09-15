@@ -8,6 +8,7 @@
 }
 
 body {
+  position: relative;
   padding: 20px;
   width : 100%;
   background-color: black;
@@ -127,6 +128,53 @@ body .judul {
 
 .container .hasil .btnHapus:hover {
   background-color: red;
+  color: white;
+  font-weight: bold;
+}
+
+.warning {
+  widht: 100%;
+}
+
+#warning {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: white;
+  color: black;
+  width: 20%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#warning p {
+  margin-bottom: 10px;
+  font-weight: bold;
+} 
+
+#warning button {
+  width: 30%;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+
+#warning button:hover {
+  background-color: green;
   color: white;
   font-weight: bold;
 }
